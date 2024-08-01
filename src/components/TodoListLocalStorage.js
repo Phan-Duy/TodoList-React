@@ -41,7 +41,7 @@ export const TodoListStorage = () => {
         localStorage.setItem('todos', JSON.stringify(newTodos));
     }
   return (
-    <div className='TodoWrapper'>
+    <div className='TodoList'>
         <h1>Get Things Done!</h1>
         <TodoForm addTodo={addTodo} />
         {todos.map((todo, index) => (
